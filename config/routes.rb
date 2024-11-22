@@ -20,7 +20,7 @@ Rails.application.routes.draw do
     resources :vehicles, only: [:index, :show] # Nested vehicles under users
   end
 
-  resoures :vehicles do
+  resources :vehicles do
     resources :positions, only: [:index, :show] # Nested positions under vehicles
   end
 
