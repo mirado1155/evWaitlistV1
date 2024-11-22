@@ -11,4 +11,21 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   # root "posts#index"
+
+  resources :stations do
+    resources :chargers, only: [:index, :show] # Nested chargers under stations
+  end
+
+  resources :users do
+    resources :vehicles, only: [:index, :show] # Nested vehicles under users
+  end
+
+  resoures :vehicles do
+    resources :positions, only: [:index, :show] # Nested positions under vehicles
+  end
+
+  resources :positions, only: [:create, :update, :destroy]
+  resources :vehicles, only: [:create, :update, :destroy]
+  resources :chargers, only: [:create, :update, :destroy]
+  resources :errors, only: [:index, :create, :update]
 end
