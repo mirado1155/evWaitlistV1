@@ -124,9 +124,6 @@ GEM
     irb (1.14.1)
       rdoc (>= 4.0.0)
       reline (>= 0.4.2)
-    jbuilder (2.13.0)
-      actionview (>= 5.0.0)
-      activesupport (>= 5.0.0)
     json (2.8.2)
     kamal (2.3.0)
       activesupport (>= 7.0)
@@ -312,9 +309,6 @@ GEM
     thruster (0.1.9-x86_64-darwin)
     thruster (0.1.9-x86_64-linux)
     timeout (0.4.2)
-    turbo-rails (2.0.11)
-      actionpack (>= 6.0.0)
-      railties (>= 6.0.0)
     tzinfo (2.0.6)
       concurrent-ruby (~> 1.0)
     unicode-display_width (2.6.0)
@@ -347,7 +341,6 @@ DEPENDENCIES
   capybara
   debug
   importmap-rails
-  jbuilder
   kamal
   pg (~> 1.1)
   propshaft
@@ -360,7 +353,6 @@ DEPENDENCIES
   solid_queue
   stimulus-rails
   thruster
-  turbo-rails
   tzinfo-data
   web-console
 
